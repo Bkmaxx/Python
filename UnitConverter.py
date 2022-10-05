@@ -19,19 +19,6 @@ convert_units(12.34, 'm', 'cm')           Output: 1234 cm
 convert_units(12.34, 'm', 'Km')           Output: 0.01234 Km
 convert_units(12.34, 'Km', 'um')         Output: 1.234e+10 um
 
-
-Write a Python function nearest_units() that has syntax:
-nearest_units(val, in_units)
-
-Example:
-nearest_units(0.012, 'm')                 Output: 1.2 cm
-nearest_units(0.12, 'm')                   Output: 1.2 dm
-nearest_units(0.00000147, 'mm')   Output: 1.47 nm
-nearest_units(345345345, 'nm')     Output: 3.45345345 dm
-nearest_units(12345, 'm')                Output: 12.345 Km
-nearest_units(123456, 'm')              Output: 0.123456 Mm
-nearest_units(1234567, 'm')            Output: 1.23456 Mm
-
 '''
 def convert_unit(num,in_type,out_type):
     output=num
